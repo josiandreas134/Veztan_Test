@@ -27,7 +27,7 @@ def result(request):
         output_img_fname = '../media/%s_tmp_out.jpg' % (tag)
         return render(request, 'visiondemo/demo.html', {'image_list': [input_img_fname,output_img_fname]})
     else:
-        return Http404("Error")
+        raise Http404("Error")
 
 
 def handle_uploaded_file(f, fname):
@@ -87,4 +87,4 @@ def fileupload(request):
         except:
             pass
 
-    return Http404("Error")
+    raise Http404("Error")
