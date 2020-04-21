@@ -22,8 +22,17 @@ Django version: 1.8.3
 
 Go to http://127.0.0.1:8080/visiondemo
 
+**Testing**
 
-**Demo outlook:**
+I created several test file inside the tests directory.
 
-![demo outlook]
-(https://raw.githubusercontent.com/charlesq34/visiondemo/master/demo.png)
+1. Start the backend first:
+
+`python manage.py runserver 8080` <br/>
+`python visiondemo/external_app.py` <br/>
+
+2. Execute the test command:
+
+`python manage.py test` <br/>
+
+
