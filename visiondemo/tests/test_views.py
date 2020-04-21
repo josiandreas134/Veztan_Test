@@ -47,9 +47,11 @@ class TestViews(TestCase):
         self.assertEquals(response2.status_code,200)
 
 
-    #def test_fileupload_url_POST(self):
-    #    response = self.client.post(self.fileupload_url, {'myinput': "http://places.csail.mit.edu/demo/3.jpg"},format='multipart' )
-    #    self.assertEquals(response.status_code,302)
+    '''*def test_fileupload_url_POST(self):
+        url = {'myinput' : "http://places.csail.mit.edu/demo/3.jpg"}
+        response = self.client.post(self.fileupload_url, url,format='multipart' )
+        self.assertEquals(response.status_code,302)'''
+        
         #It stucks here, I try to do it in the website and it also stucks there.
         #Stucks in download succeeded.
 
